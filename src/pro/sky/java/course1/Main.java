@@ -5,16 +5,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void checkTheYear(int year) {
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-                System.out.println("Год високосный ");
-            }   else System.out.println("Год не високосный");
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("Год високосный ");
+        } else System.out.println("Год не високосный");
     }
 
     private static void checkingDevice(int clientOS, int clientDeviceYear) {
         int currentYear = LocalDate.now().getYear();
         if (clientDeviceYear < currentYear) {
             System.out.print("Установите lite-версию приложения");
-        }   else System.out.print("Установите обычную-версию приложения");
+        } else System.out.print("Установите обычную-версию приложения");
         switch (clientOS) {
             case 0:
                 System.out.println(" для Android по ссылке.");
@@ -59,6 +59,7 @@ public class Main {
             array[finish] = variable;
         }
     }
+
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -84,17 +85,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	// Задание 1
+        // Задание 1
         task1();
-    // Задание 2
+        // Задание 2
         task2();
-    // Задание 3
+        // Задание 3
         task3();
-    // Задание 4
+        // Задание 4
         task4();
-    // Задание 5
+        // Задание 5
         task5();
-    // Задание 6
+        // Задание 6
         task6();
 
 
